@@ -91,4 +91,4 @@ After installation, you can test the setup by running the following command in t
 
 `mpirun -n p ./testOpenCAEPoro ./data/test/test.data`
 
-Replace `p` with the number of processes you want to use. Check the output on the screen and the newly generated files in `./data/test/`. You should find files like `SUMMARY.out` and `FastReview.out`. If you run this command with more than one process, `statistics.out` will also be generated. Use `SUMMARY_ref.out` as a reference to verify the results.
+Replace `p` with the number of processes (≤10) you want to use. Check the output on the screen and the newly generated files in `./data/test/`. You should find files like `SUMMARY.out` and `FastReview.out`. If you run this command with more than one process, `statistics.out` will also be generated. Use `SUMMARY_ref.out` as a reference to verify the results.
