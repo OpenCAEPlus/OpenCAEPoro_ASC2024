@@ -15,7 +15,7 @@ This version of OpenCAEPoro requires the following external open-source librarie
 
 ## Recommended Environment
 
-For smooth installation and optimal performance, we recommend using the Intel compiler (e.g., oneAPI-2022.1 version), gcc 7.3.0 and cmake 3.17.
+For smooth installation and optimal performance, we recommend using the Intel C/C++ compilers (e.g., oneAPI-2022.1) and cmake 3.17.
 
 ## Installation Steps
 
