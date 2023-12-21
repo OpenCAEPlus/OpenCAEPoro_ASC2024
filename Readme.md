@@ -12,6 +12,11 @@ This version of OpenCAEPoro requires the following external open-source librarie
 - **petsc-3.19.3:** A suite for solving partial differential equations.
 - **petsc_solver:** Custom solver built on top of PETSc.
 
+## Module
+
+load true module
+
+`module load cmake/3 mpich/3.4.1-intel2021 scl/gcc7.3`
 
 ## Recommended Environment
 
