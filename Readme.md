@@ -24,10 +24,7 @@ First, unzip all software packages. Then, follow these steps to install them in 
 ```[bash]
 1. build lapack:
     S1. cd lapack-3.11
-    S2. make blaslib
-    S3. make cblaslib
-    S4. make lapacklib
-    S5. make lapackelib
+    S2. make 
 
 2. build parmetis:
     S1. cd parmetis-4.0.3
@@ -49,12 +46,7 @@ First, unzip all software packages. Then, follow these steps to install them in 
     S2. modify the path in script "build-petsc.sh", such as
         export PETSC_DIR=ROOT_DIR/petsc-3.19.3
         export PETSC_ARCH=petsc_install
-        ./configure CC=mpiicc CXX=mpiicpc \
-        --with-fortran-bindings=0 \
-        --with-hypre-dir=ROOT_DIR/hypre-2.28.0/install \
-        --with-debugging=0 \
-        COPTFLAGS="-O3" \
-        CXXOPTFLAGS="-O3" \
+        ./configure --CC=mpiicc --CXX=mpiicpc --with-fc=mpiifort --with-hypre-dir=ROOT_DIR/hypre-2.28.0/install --with-debugging=0 --COPTFLAGS="-O3" --CXXOPTFLAGS="-O3" 
         make -j 20 PETSC_DIR=ROOT_DIR/petsc-3.19.3 PETSC_ARCH=petsc_install all
     S3. sh build-petsc.sh  
 
